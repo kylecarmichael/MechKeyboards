@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+     <head>
+          <meta charset="UTF-8">
+          <title>Mechanical Keyboards</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="shortcut icon" href="imgs/switchBlue.ico" type="image/x-icon">
+
+          <script src="script.js"></script>
+     </head>
+
+     <body>
+        <!-- Site Title icon image -->
+          <nav>
+            <ul>
+                <li><a href="index.html" class="activePage">Home</a></li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="keycaps.html">KeyCaps</a></li>
+                <li><a href="boards.html">Boards</a></li>
+                <li><a href="switches.html">Switches</a></li>
+                <li><a href="cables.html">Cables</a></li>
+                <li><a href="access.html">Accessories</a></li>
+            </ul>
+          </nav>
+
+          <div class="hero">
+            <ul>
+              <li>
+                <h1 class="hero-card-01">
+                  Mechanical <br>
+                  Keyboards <br>
+                  Explained
+                </h1>
+              </li>
+              <li class="hero-card-02">
+                <img src="imgs/keeb01.jpg" alt="Keyboard">
+              </li>
+              <li>
+                <p class="hero-card-03">
+                  Find out whats the best starting keyboard for you &amp; your needs
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <main>
+            <section>
+                <h2>Welcome to the world of Mechanical Keyboards!</h2>
+                <p>
+                  It can be difficult to get started and will take a lot of information gathering to feel like you know anything at all. 
+                  This site aims to aliviate that and provide an unbaised view of different products and companies.
+                  Take the quiz below to be quickly matched to the best custom starting keyboard for you!
+                </p> 
+            </section>
+            <section class="quiz-section">
+              <h2>What Keyboard is right for you?</h2>
+              <div class="question-container">
+                <p class="question1">
+                  1. Do you use a full-sized number pad?
+                </p>
+
+                <div class="ans-container">
+                  <input type="radio" name="q1" id="q1ans1" value="yes">
+                  <label class="ans" for="q1ans1">Yes</label>
+                  <br>
+                  <input type="radio" name="q1" id="q1ans2" value="sometimes">
+                  <label class="ans" for="q1ans2">Sometimes, but rarely</label>
+                  <br>
+                  <input type="radio" name="q1" id="q1ans3" value="no">
+                  <label class="ans" for="q1ans3">No, never</label>
+                </div>
+
+                
+              </div>
+
+              <div class="question-container">
+                <p class="question2">
+                  2. Do you use the F row for anything, such as games or programs?
+                </p>
+
+                <div class="ans-container">
+                  <input type="radio" name="q2" id="q2ans1" value="yes">
+                  <label class="ans" for="q2ans1">Yes, even if rarely</label>
+                  <br>
+                  <input type="radio" name="q2" id="q2ans2" value="no">
+                  <label class="ans" for="q2ans2">Nope</label>
+                </div>
+              </div>
+
+              <div class="question-container">
+                <p class="question3">
+                  3. If you use the F row, do you use it frequently?
+                </p>
+
+                <div class="ans-container">
+                  <input type="radio" name="q3" id="q3ans1" value="yes">
+                  <label class="ans" for="q3ans1">Yes, all the time </label>
+                  <br>
+                  <input type="radio" name="q3" id="q3ans2" value="no">
+                  <label class="ans" for="q3ans2">No / rarely</label>
+                </div>
+              </div>
+
+              <div class="question-container">
+                <p class="question4">
+                  4. Do you use the arrow keys for anything?
+                </p>
+
+                <div class="ans-container">
+                  <input type="radio" name="q4" id="q4ans1" value="yes">
+                  <label class="ans" for="q4ans1">Yes </label>
+                  <br>
+                  <input type="radio" name="q4" id="q4ans2" value="no">
+                  <label class="ans" for="q4ans2">Never</label>
+                </div>
+              </div>
+
+              <div class="question-container">
+                <p class="question5">
+                  5. Does the clicky sound annoy you or would it annoy the people around you?
+                </p>
+
+                <div class="ans-container">
+                  <input type="radio" name="q5" id="q5ans1" value="yes">
+                  <label class="ans" for="q5ans1">I don't want it to be obnoxious when I type</label>
+                  <br>
+                  <input type="radio" name="q5" id="q5ans2" value="no">
+                  <label class="ans" for="q5ans2">No one will hear me and I <span>really</span> miss my typewriter</label>
+                </div>
+              </div>
+
+              <div class="question-container">
+                <p class="question6">
+                  6. What is more important to you?
+                </p>
+
+                <div class="ans-container">
+                  <input type="radio" name="q6" id="q6ans1" value="acc">
+                  <label class="ans" for="q6ans1">The accuracy of input (suited well for writing/typing) </label>
+                  <br>
+                  <input type="radio" name="q6" id="q6ans2" value="speed">
+                  <label class="ans" for="q6ans2">The speed of input (suited well for gaming)</label>
+                </div>
+              </div>   
+              
+              <button onclick="getQuizResults()">See Results</button>
+            </section>
+
+            <section class="results-section hidden">
+              <h3>Layout</h3>
+              <p id="layoutMessage"></p>
+              <h3>Keycap Profile</h3>
+              <p id="capsMessage"></p>
+              <h3>Switches</h3>
+              <p id="switchesMessage"></p>
+            </section>
+          </main>
+
+          <footer>
+            <small>Created by &copy; Kyle Carmichael 2023</small>
+          </footer>
+     </body>
+</html>

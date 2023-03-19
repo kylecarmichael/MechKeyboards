@@ -1,0 +1,256 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+:root {
+    --darkest: #2a324b;
+    --dark: #454f6d;
+    --medium: #767b91;
+    --light: #e1e5ee;
+    --accent1: #81f499;
+    --accent2: #f4b942;
+}
+
+html {
+    background-color: var(--darkest);
+}
+
+body {
+    font-family: 'Gill Sans', Calibri, sans-serif;
+    background-color: var(--dark);
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--darkest);
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+nav ul {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+nav a, nav a:visited, nav a:active{
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 5rem;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 15%;
+    background-color: var(--accent1);
+    border: solid .25rem var(--accent1);
+    transition: .2s ease-in-out;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: var(--accent2);
+    border: solid .25rem var(--accent2);
+    box-shadow: 0 0 .5rem var(--accent2);
+}
+
+footer {
+    background-color: var(--darkest);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav a.activePage, nav a:visited.activePage, nav a:active.activePage {
+    color: var(--accent1);
+}
+
+nav a:hover, nav a.activePage:hover {
+    color: var(--accent2);
+    transition: .2s;
+    text-shadow: 0 0 .25rem var(--accent2);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-shadow: 1px 2px 2px var(--accent2);
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    text-shadow: 1px 1px 1px var(--accent1);
+    padding: 1rem 0 .5rem 0;
+}
+
+/* Home page Hero & cards */
+
+.hero {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero ul {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+.hero li {
+    color: var(--darkest);
+    margin: 0.5rem;
+    background-color: var(--light);
+    border-radius: 50vw ;
+    height: 30rem;
+    width: 30%;
+    box-shadow: .5rem .75rem .5rem var(--darkest);
+}
+
+.hero-card-01 {
+    margin: 0 2rem;
+    width: 50%;
+    padding-top: 15vh;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero-card-02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.hero-card-02 img {
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.hero-card-03 {
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 10vh;
+    line-height: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Content pages styling */
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-section img {
+    border-radius: 50vw;
+    width: 25vw;
+    height: 30vh;
+    float: none;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: .5rem .75rem .5rem var(--darkest);
+}
+
+.top-view {
+    object-position: 50% 17%;
+}
+
+.intro-section .intro-text{
+    float: right;
+}
+
+.intro-text {
+    padding-left: 3rem;
+}
+
+table {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--darkest);
+}
+
+th {
+    font-weight: bold;
+    padding: 0 1rem;
+    color: var(--accent1);
+}
+
+td {
+    padding: 0 1rem;
+}
+
+/* Quiz Styles */
+
+section.quiz-section {
+    padding-top: 1rem;
+}
+
+.ans-container {
+    padding: 1rem 0 1rem 2rem ;
+}
+
+span {
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Error handling (just for highlighting unanswered questions) */
+
+.not-answered {
+    color: var(--accent2);
+    font-weight: bold;
+}
